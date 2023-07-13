@@ -23,11 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-<<<<<<< HEAD
-$config['base_url'] = 'https://interns.aidcom.in/';
-=======
 $config['base_url'] = 'http://localhost/grc_interns/';
->>>>>>> main
 
 /*
 |--------------------------------------------------------------------------
