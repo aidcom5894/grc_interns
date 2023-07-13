@@ -76,15 +76,9 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-<<<<<<< HEAD
-	'username' => 'u445536153_grc_root',
-	'password' => 'Admin1234#@',
-	'database' => 'u445536153_grc_interns',
-=======
 	'username' => 'root',
 	'password' => 'Admin1234#@',
 	'database' => 'grc_interns',
->>>>>>> main
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
