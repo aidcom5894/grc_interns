@@ -22,19 +22,18 @@ $this->load->view('master_content/ui_navbar');
 <div class="col-lg-5">
 <div class="section_title type_one">
 <div class="title_whole">
-<h2 class="title">Put your insurance lead generation on autopilot</h2>
+<h2 class="title">Less Perfection but more Authenticity.</h2>
 </div>
-<p>
-Sit amet consectetur volutpat luctus ultrices sagittis justo. Integer
-nibh nisi adipiscingrna eleifend nunc consecteture
+<p style="text-align: justify;">
+We strive for authenticity and hence have launched this tracker to check Enrolled Interns' Genuinity. Our Interns are provided with specific ID to confirm their originality. Track our Interns by providing their ID in the box below.
 </p>
 </div>
 <div class="newsteller_simple">
 <div class="input_group">
 <form method="post">
-<input type="email" name="EMAIL" placeholder="Your email address"
+<input type="email" name="EMAIL" placeholder="Enter Interns ID"
 required="">
-<input type="submit" value="Sign up">
+<input type="submit" value="Verify">
 </form>
 </div>
 </div>
@@ -45,7 +44,7 @@ alt="img" />
 </div>
 <div class="section_title type_one">
 <div class="title_whole">
-<h2 class="title"> Excellent 12,534+ reviews</h2>
+<h2 class="title"> Internships Completed</h2>
 </div>
 <p>4.8 of 5 <small><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
 class="fa fa-star"></i> <i class="fa fa-star"></i> <i
