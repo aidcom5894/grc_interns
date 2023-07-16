@@ -28,322 +28,130 @@
 </a>
 </div>
 </div>
+
+
 <div class="col-xl-8 col-lg-9 col-md-0 col-sm-0 col-xs-0 column_menu">
 <div class="navbar_content d-flex align-items-center">
+
 <ul class="navbar_nav">
-<li
-class="menu-item nav-item menu-item-has-children dropdown mennucolumn_full-six">
-<a href="index.html" class="nav_link">
+	
+<li class="menu-item nav-item menu-item-has-children mennucolumn_full-six">
+<a href="<?php echo base_url(); ?>" class="nav_link">
 <span class="text-link"> Home </span>
 </a>
-<ul class="sub_menu">
-<li class="menu-item nav-item vankine_menu_image">
-<a href="index.html" class="nav_link image_big_on_menu_two">
-<span class="img-link">
-<img src="<?php echo base_url(); ?>modules/uiDesign/assets/images/demo-1-1-min-scaled.jpg"
-alt="icon" class="menu_img">
-</span>
-<span class="text-link"> Home 1 </span>
-</a>
 </li>
-<li class="menu-item vankine_menu_image">
-<a href="home-2.html" class="nav_link image_big_on_menu_two">
-<span class="img-link">
-<img src="<?php echo base_url(); ?>modules/uiDesign/assets/images/demo-1-2-min-scaled.jpg"
-alt="icon" class="menu_img">
-</span>
-<span class="text-link"> Home 2 </span>
-</a>
-</li>
-<li class="menu-item nav-item vankine_menu_image">
-<a href="home-3.html" class="nav_link image_big_on_menu_two">
-<span class="img-link">
-<img src="<?php echo base_url(); ?>modules/uiDesign/assets/images/demo-1-3-min-scaled.jpg"
-alt="icon" class="menu_img">
-</span>
-<span class="text-link"> Home 3 </span>
-</a>
-</li>
-<li class="menu-item nav-item vankine_menu_image">
-<a href="home-4.html" class="nav_link image_big_on_menu_two">
-<span class="img-link">
-<img src="<?php echo base_url(); ?>modules/uiDesign/assets/images/demo-1-4-min-scaled.jpg"
-alt="icon" class="menu_img">
-</span>
-<span class="text-link"> Home 4 </span>
-</a>
-</li>
-<li class="menu-item  nav-item vankine_menu_image">
-<a href="home-5.html" class="nav_link image_big_on_menu_two">
-<span class="img-link">
-<img src="<?php echo base_url(); ?>modules/uiDesign/assets/images/demo-1-5-min-scaled.jpg"
-alt="icon" class="menu_img">
-</span>
-<span class="text-link"> Home 5 </span>
-</a>
-</li>
-<li class="menu-item   nav-item vankine_menu_image">
-<a href="home-6.html" class="nav_link image_big_on_menu_two">
-<span class="img-link">
-<img src="<?php echo base_url(); ?>modules/uiDesign/assets/images/demo-1-6-min-scaled.jpg"
-alt="icon" class="menu_img">
-</span>
-<span class="text-link"> Home 6 </span>
-</a>
-</li>
-</ul>
 
-</li>
-<li
-class="menu-item  menu-item-has-children dropdown  mennucolumn_ nav-item">
+<!-- Listed Menu for About Us -->
+<li class="menu-item  menu-item-has-children dropdown  mennucolumn_ nav-item">
 <a href="#" class="nav_link">
 <span class="text-link">
-Pages
+About
 </span>
 </a>
 <ul class="sub_menu">
-<li class="menu-item nav-item">
-<a href="about-us.html" class="nav_link">
-<span class="text-link"> About
-Us
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="faqs.html" class="nav_link">
-<span class="text-link">
-Faq’s
-</span>
-</a>
-</li>
-<li class="menu-item   nav-item">
-<a href="pricing.html" class="nav_link">
-<span class="text-link">
-Pricing
-</span>
-</a>
-</li>
-<li class="menu-item   nav-item">
-<a href="team.html" class="nav_link">
-<span class="text-link">
-Team
-</span>
-</a>
-</li>
-<li class="menu-item   nav-item">
-<a href="team-detail.html" class="nav_link">
-<span class="text-link"> Team
-Detail
-</span>
-</a>
-</li>
-</ul>
 
-</li>
-<li class="menu-item menu-item-has-children dropdown  nav-item">
-<a href="#" class="nav_link">
-<span class="text-link">
-Services
-</span>
-</a>
-<ul class="sub_menu">
 <li class="menu-item nav-item">
-<a href="service.html" class="nav_link">
-<span class="text-link">
-Service Style 1
-</span>
-</a>
+<a href="about-us.html" class="nav_link"><span class="text-link"> What is GRC? </span> </a>
 </li>
-<li class="menu-item nav-item">
-<a href="service-style-2.html" class="nav_link">
-<span class="text-link">
-Service Style 2
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="service-style-3.html" class="nav_link">
-<span class="text-link">
-Service Style 3
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="service-style-4.html" class="nav_link">
-<span class="text-link">
-Service Style 4
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="service-style-5.html" class="nav_link">
-<span class="text-link">
-Service Style 5
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="service-style-6.html" class="nav_link">
-<span class="text-link">
-Service Style 6
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="service-details.html" class="nav_link">
-<span class="text-link">
-Service Details
-</span>
-</a>
-</li>
-</ul>
 
-</li>
-<li
-class="menu-item  menu-item-has-children dropdown  mennucolumn_  nav-item">
-<a href="#" class="nav_link">
-<span class="text-link">
-Portfolio
-</span>
-</a>
-<ul class="sub_menu">
 <li class="menu-item nav-item">
-<a href="portfolio-style-1.html" class="nav_link">
-<span class="text-link">
-Portfolio Style 1
-</span>
-</a>
+<a href="about-us.html" class="nav_link"><span class="text-link">Why GRC? </span> </a>
 </li>
-<li class="menu-item nav-item">
-<a href="portfolio-style-2.html" class="nav_link">
-<span class="text-link">
-Portfolio Style 2
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="portfolio-details.html" class="nav_link">
-<span class="text-link">
-Portfolio Details
-</span>
-</a>
-</li>
+
 </ul>
 </li>
-<li
-class="menu-item  menu-item-has-children dropdown  mennucolumn_two   nav-item">
-<a href="blog.html" class="nav_link">
-<span class="text-link">
-Blog
-</span>
-</a>
-<ul class="sub_menu">
+
+
+
 <li class="menu-item menu-item-has-children dropdown  nav-item">
-<a href="#" class="nav_link">
-<span class="text-link">
-Blog Grid
-</span>
+<a href="#" class="nav_link"><span class="text-link">Internships</span>
 </a>
+
 <ul class="sub_menu">
-<li class="menu-item  nav-item">
-<a href="blog.html" class="nav_link">
-<span class="text-link">
-Blog Default
-</span>
-</a>
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">Apply for Internship</span></a>
 </li>
-<li class="menu-item  nav-item">
-<a href="blog-style-1.html" class="nav_link">
-<span class="text-link">
-Blog Style 1
-</span>
-</a>
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">Learnings</span></a>
 </li>
-<li class="menu-item  nav-item">
-<a href="blog-style-2.html" class="nav_link">
-<span class="text-link">
-Blog Style 2
-</span>
-</a>
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">Enrolled Interns</span></a>
 </li>
+
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">Interns Workshop</span></a>
+</li>
+
 </ul>
 </li>
-<li class="menu-item menu-item-has-children dropdown  nav-item">
-<a href="#" class="nav_link"><span class="text-link"> Blog
-Details </span></a>
+
+<li class="menu-item  menu-item-has-children dropdown  mennucolumn_  nav-item">
+<a href="#" class="nav_link"><span class="text-link">Portfolio</span></a>
+
 <ul class="sub_menu">
-<li class="menu-item   nav-item">
-<a href="blog-details.html" class="nav_link">
-<span class="text-link">
-No Sidebar
-</span>
-</a>
-</li>
-<li class="menu-item  nav-item">
-<a href="blog-details-left-sidebar.html"
-class="nav_link">
-<span class="text-link">
-Left Sidebar
-</span>
-</a>
-</li>
+
 <li class="menu-item nav-item">
-<a href="blog-details-right-sidebar.html"
-class="nav_link">
-<span class="text-link">
-Right Sidebar
-</span>
-</a>
+<a href="#" class="nav_link"><span class="text-link">Organisation</span></a>
+</li>
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">Administrator</span></a>
+</li>
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">SMEs & Mentors</span></a>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li
-class="menu-item  menu-item-has-children dropdown  mennucolumn_  nav-item">
-<a href="shop.html" class="nav_link">
-<span class="text-link">
-Shop
-</span>
-</a>
+
+
+<li class="menu-item  menu-item-has-children dropdown  mennucolumn_  nav-item">
+<a href="#" class="nav_link"><span class="text-link">Blogs</span></a>
+
 <ul class="sub_menu">
+
 <li class="menu-item nav-item">
-<a href="shop.html" class="nav_link">
-<span class="text-link">
-Products
-</span>
-</a>
+<a href="#" class="nav_link"><span class="text-link">Read Blogs</span></a>
 </li>
+
 <li class="menu-item nav-item">
-<a href="shop-details.html" class="nav_link">
-<span class="text-link">
-Product Details
-</span>
-</a>
+<a href="#" class="nav_link"><span class="text-link">Become an Author</span></a>
 </li>
+
 <li class="menu-item nav-item">
-<a href="my-account.html" class="nav_link">
-<span class="text-link">
-My account
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="cart.html" class="nav_link">
-<span class="text-link">
-Cart
-</span>
-</a>
-</li>
-<li class="menu-item nav-item">
-<a href="checkout.html" class="nav_link">
-<span class="text-link">
-Checkout
-</span>
-</a>
+<a href="#" class="nav_link"><span class="text-link">Share your Articles</span></a>
 </li>
 </ul>
 </li>
+
+
+<li class="menu-item  menu-item-has-children dropdown  mennucolumn_  nav-item">
+<a href="#" class="nav_link"><span class="text-link">Dashboard</span></a>
+
+<ul class="sub_menu">
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">Administrator</span></a>
+</li>
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">SMEs & Mentors</span></a>
+</li>
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">Enrolled Interns</span></a>
+</li>
+
+<li class="menu-item nav-item">
+<a href="#" class="nav_link"><span class="text-link">Webmail</span></a>
+</li>
+</ul>
+</li>
+
 <li class="menu-item  nav-item">
 <a href="contact.html" class="nav_link">
 <span class="text-link">
@@ -351,12 +159,15 @@ Contact
 </span>
 </a>
 </li>
+
 </ul>
-<div class="search search-toggler">
-<i class="fi-rs-search"></i>
+
 </div>
 </div>
-</div>
+
+
+
+
 <div class="col-xl-2 col-lg-3 col-md-7 col-sm-7 col-xs-7 nav_tog_column">
 <div class="d-flex right_content align-items-center">
 <!--menu icon-->
@@ -366,9 +177,12 @@ Contact
 <span class="line"></span>
 </div>
 <!--menu icon-->
+
+
+
 <div class="button">
 <a href="#" class="theme_btn">
-Get A Quote
+Join Now
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
 xmlns="http://www.w3.org/2000/svg">
 <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" stroke-width="1.5"
@@ -388,9 +202,14 @@ stroke-linejoin="round">
 </div>
 </div>
 </div>
+
+
+
 </div>
 </div>
 </div>
 </header>
+
+
 </div>
 <!----=============Header end=============---->
