@@ -133,7 +133,7 @@ About
 <ul class="sub_menu">
 
 <li class="menu-item nav-item">
-<a href="#" class="nav_link"><span class="text-link">Administrator</span></a>
+<a href="<?php echo base_url('admin_signup'); ?>" class="nav_link"><span class="text-link">Administrator</span></a>
 </li>
 
 <li class="menu-item nav-item">

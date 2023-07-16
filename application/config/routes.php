@@ -52,3 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = 'DefaultErrorController';
 $route['translate_uri_dashes'] = FALSE;
+
+// UI Controllers 
+$route['admin_signup'] = 'UI_Controllers/loadAdminSignup';
