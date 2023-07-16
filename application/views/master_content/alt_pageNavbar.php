@@ -150,21 +150,18 @@ About
 </li>
 
 <li class="menu-item  menu-item-has-children dropdown  mennucolumn_  nav-item">
-<a href="#" class="nav_link"><span class="text-link">Portfolio</span></a>
+<a href="#" class="nav_link"><span class="text-link">Demonstration</span></a>
 
 <ul class="sub_menu">
 
 <li class="menu-item nav-item">
-<a href="#" class="nav_link"><span class="text-link">Organisation</span></a>
+<a href="#" class="nav_link"><span class="text-link">View Demo</span></a>
 </li>
 
 <li class="menu-item nav-item">
-<a href="#" class="nav_link"><span class="text-link">Administrator</span></a>
+<a href="#" class="nav_link"><span class="text-link">Request a Demo </span></a>
 </li>
 
-<li class="menu-item nav-item">
-<a href="#" class="nav_link"><span class="text-link">SMEs & Mentors</span></a>
-</li>
 </ul>
 </li>
 
@@ -240,7 +237,7 @@ Contact
 <!--menu icon-->
 <div class="button">
 <a href="#" class="theme_btn">
-Join Now
+View Demo
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
 xmlns="http://www.w3.org/2000/svg">
 <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white"
