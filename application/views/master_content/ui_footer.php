@@ -194,12 +194,14 @@ title="Search" />
 <a href="#" class="logo navbar-brand">
 <img src="<?php echo base_url(); ?>modules/uiDesign/assets/images/theme-logo.png" alt="Vankine" class="logo_default">
 </a>
+
 <div class="about_company">
 Denounce with righteous indignation and dislike men who are beguiled
 and demoralized by the charms pleasure moment so blinded desire that
 they cannot foresee the pain and trouble.
 </div>
 </div>
+
 <div class="contnet_box">
 <div class="post_contet_modal">
 <h2 class="title_no_a_28"> Latest Portfolio</h2>

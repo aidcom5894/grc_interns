@@ -3841,7 +3841,7 @@ body .service_post.style_one .owl-carousel .owl-dots {
 }
 .service_box.type_six.color_two .content a.theme_btn:hover {
   color: var(--color-white) !important;
-  border-color: transparent;
+  border-color: deepskyblue;
   background-image: linear-gradient(120deg, var(--color-set-four-1) 0%, var(--color-set-four-2) 100%);
 }
 .service_box.type_seven {
