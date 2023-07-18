@@ -45,21 +45,23 @@
 </div>
 
 
-<form>
+<form method="POST" action="<?php echo base_url('admin_login'); ?>">
 <div class="form-floating form-floating-custom mb-3">
-<input type="text" class="form-control" id="input-name" placeholder="Enter Username" name="adminName">
-<label for="input-email">Name</label>
+<input type="text" class="form-control" id="input-name" placeholder="Enter Login ID" name="adminLoginID">
+<label for="input-email">Login ID</label>
 <div class="form-floating-icon">
 <i class="uil uil-user-circle"></i>
 </div>
 </div>
+
 <div class="form-floating form-floating-custom mb-3">
-<input type="email" class="form-control" id="input-username" placeholder="Enter Email" name="adminEmail">
+<input type="email" class="form-control" id="input-username" placeholder="Enter Email" name="adminLoginEmail">
 <label for="input-username">Email</label>
 <div class="form-floating-icon">
 <i class="uil uil-envelope-alt"></i>
 </div>
 </div>
+
 <div class="form-floating form-floating-custom mb-3">
 <input type="password" class="form-control" id="floatingPassword" placeholder="Enter Password" name="adminPassword">
 <label for="floatingPassword">Password</label>

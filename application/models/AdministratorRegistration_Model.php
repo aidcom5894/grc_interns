@@ -47,6 +47,7 @@ class AdministratorRegistration_Model extends CI_Model
 					'admin_email' => $email,
 					'admin_contact' => $contact,
 					'admin_loginID' => $adminLoginId,
+					'admin_password' => md5($password),
 					'admin_avatar' => $adminAvatar,
 					'admin_role' => $adminRole);
 				$this->db->insert('administrator',$adminDetails);
@@ -54,15 +55,66 @@ class AdministratorRegistration_Model extends CI_Model
 				echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
 
 				echo '<script type="text/javascript">';
-				echo 'setTimeout(function () { swal("Registration Successful","New Admin with authorised access Registered.","success");';
+				echo 'setTimeout(function () { swal("Registration Successful","New Admin registered with ID: '.$adminLoginId.'. Please login with same login ID for Accessing Dashboard. Credentials once lost cannot be retreived.","success");';
 				echo '}, 100);</script>';
 
 				$this->load->view('onboarding/administrator/administrator_login');				
 			}
 		}
-
 		
 	}
+
+	public function loginSA()
+	{
+		if(isset($_POST['AdminLogin']))
+		{
+			$adminID = $_POST['adminLoginID'];
+			$adminEmail = $_POST['adminLoginEmail'];
+			$adminPassword = md5($_POST['adminPassword']);
+
+			$checkEntry = $this->db->query("SELECT admin_loginID,admin_email,admin_password FROM administrator WHERE admin_loginID='$adminID' AND admin_email='$adminEmail' AND admin_password= '$adminPassword' ");
+
+			if($checkEntry->num_rows()>0)
+			{
+				$_SESSION['adminName'] = $adminID;
+				echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+
+				echo '<script type="text/javascript">';
+				echo 'setTimeout(function () { swal("Login Successful","Login successful Redirecting to Dashboard","success");';
+				echo '}, 100);</script>';
+
+				$this->load->view('onboarding/administrator/administrator_dashboard');
+			}
+			else
+			{
+				echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+
+				echo '<script type="text/javascript">';
+				echo 'setTimeout(function () { swal("Login Failed","No Authorised Admin Found","error");';
+				echo '}, 100);</script>';
+				$this->load->view('onboarding/administrator/administrator_login');
+			}
+		}
+	}
+
+
+	public function adminLogout()
+	{
+
+		
+
+		echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+
+				echo '<script type="text/javascript">';
+				echo 'setTimeout(function () { swal("Admin Logged Out","Admin logout successful.","success");';
+				echo '}, 100);</script>';
+				session_destroy();
+		unset($_SESSION['adminName']);
+
+		$this->load->view('onboarding/administrator/administrator_login');
+	}
+
+
 }
 
 ?>
