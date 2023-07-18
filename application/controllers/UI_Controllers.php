@@ -17,6 +17,11 @@ class UI_Controllers extends CI_Controller
 	{
 		$this->load->view('onboarding/administrator/administrator_signup');
 	}
+
+	public function loadLoginPage()
+	{
+		$this->load->view('onboarding/administrator/administrator_login');
+	}
 }
 
 

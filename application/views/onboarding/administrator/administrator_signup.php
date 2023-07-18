@@ -45,23 +45,23 @@
 </div>
 
 
-<form>
+<form method="POST" action="<?php echo base_url('sa_registration'); ?>">
 <div class="form-floating form-floating-custom mb-3">
-<input type="text" class="form-control" id="input-name" placeholder="Enter Username">
+<input type="text" class="form-control" id="input-name" placeholder="Enter Username" name="adminName">
 <label for="input-email">Name</label>
 <div class="form-floating-icon">
 <i class="uil uil-user-circle"></i>
 </div>
 </div>
 <div class="form-floating form-floating-custom mb-3">
-<input type="email" class="form-control" id="input-username" placeholder="Enter Email">
+<input type="email" class="form-control" id="input-username" placeholder="Enter Email" name="adminEmail">
 <label for="input-username">Email</label>
 <div class="form-floating-icon">
 <i class="uil uil-envelope-alt"></i>
 </div>
 </div>
 <div class="form-floating form-floating-custom mb-3">
-<input type="password" class="form-control" id="floatingPassword" placeholder="Enter Password">
+<input type="password" class="form-control" id="floatingPassword" placeholder="Enter Password" name="adminPassword">
 <label for="floatingPassword">Password</label>
 <div class="form-floating-icon">
 <i class="uil uil-padlock"></i>
@@ -73,7 +73,7 @@
 </div>
 
 <div class="mt-3">
-<button class="btn btn-info w-100" type="submit">Register</button>
+<button class="btn btn-info w-100" type="submit" name="enrollSuperAdmin">Register</button>
 </div>
 </form><!-- end form -->
 
