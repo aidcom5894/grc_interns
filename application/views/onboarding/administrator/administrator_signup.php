@@ -45,7 +45,7 @@
 </div>
 
 
-<form method="POST" action="<?php echo base_url('sa_registration'); ?>">
+<form method="POST" action="<?php echo base_url('sa_onboarding'); ?>">
 <div class="form-floating form-floating-custom mb-3">
 <input type="text" class="form-control" id="input-name" placeholder="Enter Username" name="adminName">
 <label for="input-email">Name</label>
