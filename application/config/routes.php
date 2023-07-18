@@ -60,3 +60,9 @@ $route['super_admin_login'] = 'UI_Controllers/loadLoginPage';
 
 // Action Controllers
 $route['sa_onboarding'] = 'UiAction_Controller/registerSA';
+
+$route['admin_login'] = 'UiAction_Controller/adminLoginCheck';
+
+$route['admin_logout'] = 'UiAction_Controller/saLogout';
+
+$route['admin_dashboard'] = 'UiAction_Controller/adminDashboard';

@@ -47,21 +47,21 @@
 
 <form method="POST" action="<?php echo base_url('sa_onboarding'); ?>">
 <div class="form-floating form-floating-custom mb-3">
-<input type="text" class="form-control" id="input-name" placeholder="Enter Username" name="adminName">
+<input type="text" class="form-control" id="input-name" placeholder="Enter Username" name="adminName" autocomplete="off" required="">
 <label for="input-email">Name</label>
 <div class="form-floating-icon">
 <i class="uil uil-user-circle"></i>
 </div>
 </div>
 <div class="form-floating form-floating-custom mb-3">
-<input type="email" class="form-control" id="input-username" placeholder="Enter Email" name="adminEmail">
+<input type="email" class="form-control" id="input-username" placeholder="Enter Email" name="adminEmail" autocomplete="off" required="">
 <label for="input-username">Email</label>
 <div class="form-floating-icon">
 <i class="uil uil-envelope-alt"></i>
 </div>
 </div>
 <div class="form-floating form-floating-custom mb-3">
-<input type="password" class="form-control" id="floatingPassword" placeholder="Enter Password" name="adminPassword">
+<input type="password" class="form-control" id="floatingPassword" placeholder="Enter Password" name="adminPassword" autocomplete="off" required="">
 <label for="floatingPassword">Password</label>
 <div class="form-floating-icon">
 <i class="uil uil-padlock"></i>
