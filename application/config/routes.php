@@ -56,3 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 // UI Controllers 
 $route['admin_signup'] = 'UI_Controllers/loadAdminSignup';
 $route['super_admin_login'] = 'UI_Controllers/loadLoginPage';
+
+
+// Action Controllers
+$route['sa_onboarding'] = 'UiAction_Controller/registerSA';
