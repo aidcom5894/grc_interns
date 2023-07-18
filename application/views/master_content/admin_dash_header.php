@@ -5,7 +5,7 @@ if(!isset($_SESSION['adminName']))
 	session_destroy();
 	unset($_SESSION['adminName']);
 
-	redirect(base_url('admin_login'));
+	redirect(base_url('super_admin_login'));
 }
 
 ?>

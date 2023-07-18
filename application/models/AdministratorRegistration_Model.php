@@ -82,8 +82,8 @@ class AdministratorRegistration_Model extends CI_Model
 				echo '<script type="text/javascript">';
 				echo 'setTimeout(function () { swal("Login Successful","Login successful Redirecting to Dashboard","success");';
 				echo '}, 100);</script>';
-
-				$this->load->view('onboarding/administrator/administrator_dashboard');
+				
+				redirect(base_url('admin_dashboard'));
 			}
 			else
 			{

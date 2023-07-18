@@ -79,8 +79,8 @@
 </div>
 </form><!-- end form -->
 
-<div class="cotainer" style="margin-top: 25px;"></div>
-<a href="<?php echo base_url(); ?>"><i class="uil-home mx-auto" style="font-size: 18px; text-decoration: none;"> <span style="font-size: 18px;">Back to Home</span></i></a>
+<div class="cotainer" style="margin-top: 17px;"></div>
+<a href="<?php echo base_url(); ?>"><i class="uil-home mx-auto" style="font-size: 13px; text-decoration: none;"> <span style="font-size: 12px;">Back to Home</span></i></a>
 
 </div>
 </div><!-- end col -->
