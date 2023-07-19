@@ -357,20 +357,27 @@ class="me-3 rounded-circle avatar-sm" alt="user-pic">
 </button>
 </div>
 
+<?php 
+
+$fetchDetails = $this->db->query("SELECT * FROM administrator WHERE admin_loginID='{$_SESSION['adminName']}'");
+
+$row = $fetchDetails->row();
+
+if(isset($row)) { ?>
+
 <div class="dropdown d-inline-block">
 <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown"
 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<img class="rounded-circle header-profile-user" src="<?php echo base_url(); ?>modules/dashboard/assets/images/users/avatar-1.jpg"
-alt="Header Avatar">
+<img class="rounded-circle header-profile-user" src="<?php echo $row->admin_avatar; ?>" alt="Header Avatar">
 <span class="ms-2 d-none d-sm-block user-item-desc">
-<span class="user-name">Kate Dudley</span>
-<span class="user-sub-title">Administrator</span>
+<span class="user-name"><?php echo $row->admin_name; ?></span>
+<span class="user-sub-title"><?php echo $row->admin_role; ?></span>
 </span>
 </button>
 <div class="dropdown-menu dropdown-menu-end pt-0">
 <div class="p-3 bg-primary border-bottom">
-<h6 class="mb-0 text-white">Kate Dudley</h6>
-<p class="mb-0 font-size-11 text-white-50 fw-semibold">kate.dudley@email.com</p>
+<h6 class="mb-0 text-white"><?php echo $row->admin_loginID; ?></h6>
+<p class="mb-0 font-size-11 text-white-50 fw-semibold"><?php echo $row->admin_email; ?></p>
 </div>
 <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
 <a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
@@ -380,9 +387,15 @@ alt="Header Avatar">
 <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-wallet text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Balance : <b>$6951.02</b></span></a>
 <a class="dropdown-item d-flex align-items-center" href="user-settings.html"><i class="mdi mdi-cog-outline text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Settings</span><span class="badge badge-success-subtle ms-auto">New</span></a>
 <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
-<a class="dropdown-item" href="auth-signout-basic.html"><i class="mdi mdi-logout text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Logout</span></a>
+
+<a class="dropdown-item" href="<?php echo base_url('admin_logout'); ?>"><i class="mdi mdi-logout text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Logout</span></a>
+
 </div>
 </div>
+
+<?php } ?>
+
+
 </div>
 </div>
 </header>
