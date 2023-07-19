@@ -314,6 +314,8 @@ Devices
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
 <script src="<?php echo base_url(); ?>modules/uiDesign/assets/js/gmaps.js"></script>
 <script src="<?php echo base_url(); ?>modules/uiDesign/assets/js/map-helper.js"></script>
+
+<script src="<?php echo base_url(); ?>modules/uiDesign/assets/libs/flatpickr/flatpickr.min.js"></script>
 <!-- main-js -->
 <script type='text/javascript' src='<?php echo base_url(); ?>modules/uiDesign/assets/js/main.js'></script> 
 <!----=================Script================---->

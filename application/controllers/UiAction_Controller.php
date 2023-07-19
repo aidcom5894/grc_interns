@@ -18,6 +18,16 @@ class UiAction_Controller extends CI_Controller
 		$this->load->view('onboarding/administrator/administrator_dashboard');
 	}
 
+	public function loadAdminProfile()
+	{
+		$this->load->view('onboarding/administrator/administrator_profileView');
+	}
+
+	public function profileSettingPage()
+	{
+		$this->load->view('onboarding/administrator/administrator_profile_settings');
+	}
+
 	public function registerSA()
 	{
 		$this->load->model('AdministratorRegistration_Model');

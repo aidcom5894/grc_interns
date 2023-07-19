@@ -39,6 +39,14 @@ Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://Pichf
 
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/dashboard-sales.init.js"></script>
 
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/swiper-bundle.min.js"></script>
+
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/profile.init.js"></script>
+
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/choices.min.js"></script>
+
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/flatpickr.min.js"></script>
+
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/app.js"></script>
 
 </body>

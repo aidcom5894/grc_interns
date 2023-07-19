@@ -32,88 +32,6 @@
 <i class="fa fa-fw fa-bars"></i>
 </button>
 
-<div class="dropdown d-none d-lg-block ms-2">
-<button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-<span>Components</span>
-<i class="mdi mdi-chevron-down"></i> 
-</button>
-<div class="dropdown-menu dropdown-menu-xl p-2">
-<div class="row">
-<div class="col-md-6">
-<a class="dropdown-item" href="#!">Alerts</a>
-<a class="dropdown-item" href="#!">Buttons</a>
-<a class="dropdown-item" href="#!">Cards</a>
-<a class="dropdown-item" href="#!">Dropdowns</a>
-<a class="dropdown-item" href="#!">Lightbox</a>
-<a class="dropdown-item" href="#!">Modals</a>
-<a class="dropdown-item" href="#!">Range Slider</a>
-</div>
-<div class="col-md-6">
-<a class="dropdown-item" href="#!">Progress Bars</a>
-<a class="dropdown-item" href="#!">Sweet-Alert</a>
-<a class="dropdown-item" href="#!">Tabs & Accordions</a>
-<a class="dropdown-item" href="#!">Typography</a>
-<a class="dropdown-item" href="#!">General</a>
-<a class="dropdown-item" href="#!">Rating</a>
-<a class="dropdown-item" href="#!">Notifications</a>
-</div>
-</div>
-</div>
-</div>
-
-<div class="dropdown dropdown-mega d-none d-lg-block">
-<button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-<span>Categories</span>
-<i class="mdi mdi-chevron-down"></i> 
-</button>
-<div class="dropdown-menu p-2 dropdown-megamenu">
-<div class="row">
-<div class="col">
-<h5 class="font-size-14 mx-4 mt-2">Computers & Accessories</h5>
-<a class="dropdown-item" href="#!">Laptops &amp; Tablets</a>
-<a class="dropdown-item" href="#!">Desktop Computers</a>
-<a class="dropdown-item" href="#!">Networking Products (NAS)</a>
-<a class="dropdown-item" href="#!">Monitors</a>
-<a class="dropdown-item" href="#!">Bags, Cases &amp; Sleeves</a>
-<a class="dropdown-item" href="#!">Batteries</a>
-<a class="dropdown-item" href="#!">Charges &amp; Adapters</a>
-</div>
-<div class="col">
-<h5 class="font-size-14 ms-4 mt-2">Smartphones & Tablets</h5>
-<a class="dropdown-item" href="#!">Apple iPhone</a>
-<a class="dropdown-item" href="#!">Android Smartphones</a>
-<a class="dropdown-item" href="#!">Phablets</a>
-<a class="dropdown-item" href="#!">Apple iPad</a>
-<a class="dropdown-item" href="#!">Android Tablets</a>
-<a class="dropdown-item" href="#!">Tablets with Keyboard</a>
-</div>
-<div class="col">
-<h5 class="font-size-14 ms-4 mt-2">Television & Video</h5>
-<a class="dropdown-item" href="#!">TV Sets</a>
-<a class="dropdown-item" href="#!">Home Theater Systems</a>
-<a class="dropdown-item" href="#!">DVD Players & Recorders</a>
-<a class="dropdown-item" href="#!">DVD-VCR Combos</a>
-<a class="dropdown-item" href="#!">Projectors</a>
-<a class="dropdown-item" href="#!">Projection Screens</a>
-<a class="dropdown-item" href="#!">Satelite Television</a>
-</div>
-<div class="col">
-<h5 class="font-size-14 ms-4 mt-2">Cameras, Photo & Video</h5>
-<a class="dropdown-item" href="#!">Point & Shoot Digital Cameras</a>
-<a class="dropdown-item" href="#!">DSLR Cameras</a>
-<a class="dropdown-item" href="#!">Mirrorless Cameras</a>
-<a class="dropdown-item" href="#!">Body Mounted Cameras</a>
-<a class="dropdown-item" href="#!">Camera Lenses</a>
-<a class="dropdown-item" href="#!">Video Studio</a>
-</div>
-<div class="col">
-<div class="py-lg-2 pr-lg-2">
-<img src="<?php echo base_url(); ?>modules/dashboard/assets/images/illustrator/1.png" alt="" class="img-fluid mx-auto" style="max-height: 250px;">
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 
 <div class="d-flex">
@@ -379,14 +297,16 @@ data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <h6 class="mb-0 text-white"><?php echo $row->admin_loginID; ?></h6>
 <p class="mb-0 font-size-11 text-white-50 fw-semibold"><?php echo $row->admin_email; ?></p>
 </div>
-<a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
-<a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
-<a class="dropdown-item" href="apps-kanban-board.html"><i class="mdi mdi-calendar-check-outline text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Taskboard</span></a>
-<a class="dropdown-item" href="pages-faqs.html"><i class="mdi mdi-lifebuoy text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Help</span></a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-wallet text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Balance : <b>$6951.02</b></span></a>
-<a class="dropdown-item d-flex align-items-center" href="user-settings.html"><i class="mdi mdi-cog-outline text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Settings</span><span class="badge badge-success-subtle ms-auto">New</span></a>
+
+<a class="dropdown-item" href="<?php echo base_url('admin_profile_view'); ?>"><i class="mdi mdi-account-circle text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+
+
+<a class="dropdown-item d-flex align-items-center" href="<?php echo base_url('profile_settings'); ?>"><i class="mdi mdi-cog-outline text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Settings</span><span class="badge badge-success-subtle ms-auto">New</span></a>
+
+
 <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
+
+
 
 <a class="dropdown-item" href="<?php echo base_url('admin_logout'); ?>"><i class="mdi mdi-logout text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Logout</span></a>
 
