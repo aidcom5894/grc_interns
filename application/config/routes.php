@@ -66,3 +66,7 @@ $route['admin_login'] = 'UiAction_Controller/adminLoginCheck';
 $route['admin_logout'] = 'UiAction_Controller/saLogout';
 
 $route['admin_dashboard'] = 'UiAction_Controller/adminDashboard';
+
+$route['admin_profile_view'] = 'UiAction_Controller/loadAdminProfile';
+
+$route['profile_settings'] = 'UiAction_Controller/profileSettingPage';
