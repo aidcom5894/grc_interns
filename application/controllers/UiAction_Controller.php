@@ -28,6 +28,11 @@ class UiAction_Controller extends CI_Controller
 		$this->load->view('onboarding/administrator/administrator_profile_settings');
 	}
 
+	public function addInterns()
+	{
+		$this->load->view('onboarding/administrator/add_interns');
+	}
+
 	public function registerSA()
 	{
 		$this->load->model('AdministratorRegistration_Model');
@@ -44,6 +49,18 @@ class UiAction_Controller extends CI_Controller
 	{
 		$this->load->model('AdministratorRegistration_Model');
 		$this->AdministratorRegistration_Model->adminLogout();
+	}
+
+	public function registerInterns()
+	{
+		$this->load->model('AdministratorRegistration_Model');
+		$this->AdministratorRegistration_Model->enrollInterns();
+	}
+
+	public function internsLoginAction()
+	{
+		$this->load->model('InternOnboarding_Model');
+		$this->InternOnboarding_Model->internsLogin();
 	}
 }
 

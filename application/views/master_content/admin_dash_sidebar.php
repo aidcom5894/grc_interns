@@ -53,33 +53,27 @@
 <li class="menu-title" data-key="t-applications">Interns Management</li>
 
 <li>
-<a href="apps-calendar.html">
+
+<a href="<?php echo base_url('add_new_interns'); ?>">
 <i class="icon nav-icon" data-feather="calendar"></i>
-<span class="menu-item" data-key="t-calendar">Calendar</span>
+<span class="menu-item" data-key="t-calendar">Add Interns</span>
 </a>
 </li>
 
 <li>
 <a href="apps-chat.html">
 <i class="icon nav-icon" data-feather="message-square"></i>
-<span class="menu-item" data-key="t-chat">Chat</span>
-<span class="badge rounded-pill badge-danger-subtle" data-key="t-hot">Hot</span>
+<span class="menu-item" data-key="t-chat">Manage Interns</span>
 </a>
 </li>
 
 <li>
 <a href="apps-kanban-board.html">
 <i class="icon nav-icon" data-feather="trello"></i>
-<span class="menu-item" data-key="t-kanban">Kanban Board</span>
+<span class="menu-item" data-key="t-kanban">Assign Work</span>
 </a>
 </li>
 
-<li>
-<a href="apps-file-manager.html">
-<i class="icon nav-icon" data-feather="folder"></i>
-<span class="menu-item" data-key="t-filemanager">File Manager</span>
-</a>
-</li>
 
 <li>
 <a href="javascript: void(0);" class="has-arrow">
@@ -92,37 +86,15 @@
 </ul>
 </li>
 
-<li>
-<a href="javascript: void(0);" class="has-arrow">
-<i class="icon nav-icon" data-feather="book"></i>
-<span class="menu-item" data-key="t-contacts">Contacts</span>
-</a>
-<ul class="sub-menu" aria-expanded="false">
-<li><a href="contacts-grid.html" data-key="t-user-grid">User Grid</a></li>
-<li><a href="contacts-list.html" data-key="t-user-list">User List</a></li>
-<li><a href="user-settings.html" data-key="t-user-settings">User Settings</a></li>
-</ul>
-</li>
 
 <li>
-<a href="apps-gallery.html">
-<i class="icon nav-icon" data-feather="image"></i>
-<span class="menu-item" data-key="t-gallery">Gallery</span>
+<a href="apps-kanban-board.html">
+<i class="icon nav-icon" data-feather="trello"></i>
+<span class="menu-item" data-key="t-kanban">View Task Progress</span>
 </a>
 </li>
 
-<li>
-<a href="javascript: void(0);" class="has-arrow">
-<i class="icon nav-icon" data-feather="briefcase"></i>
-<span class="menu-item" data-key="t-projects">Projects</span>
-</a>
-<ul class="sub-menu" aria-expanded="false">
-<li><a href="projects-grid.html" data-key="t-p-grid">Projects Grid</a></li>
-<li><a href="projects-list.html" data-key="t-p-list">Projects List</a></li>
-<li><a href="projects-overview.html" data-key="t-p-overview">Project Overview</a></li>
-<li><a href="projects-create.html" data-key="t-create-new">Create New</a></li>
-</ul>
-</li>
+<!-- 
 
 <li class="menu-title" data-key="t-layouts">Layouts</li>
 
@@ -403,7 +375,9 @@
 <li><a href="maps-leaflet.html" data-key="t-leaflet">Leaflet</a></li>
 </ul>
 </li>
-
+ -->
+<!-- 
+ 
 <li>
 <a href="javascript: void(0);" class="has-arrow">
 <i class="icon nav-icon" data-feather="share-2"></i>
@@ -418,7 +392,7 @@
 </ul>
 </li>
 </ul>
-</li>
+</li> -->
 
 </ul>
 </div>

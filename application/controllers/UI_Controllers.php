@@ -22,6 +22,13 @@ class UI_Controllers extends CI_Controller
 	{
 		$this->load->view('onboarding/administrator/administrator_login');
 	}
+
+	public function internsLogin()
+	{
+		$this->load->view('dashboard/interns/interns_login');
+	}
+
+	
 }
 
 
