@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 19, 2023 at 03:11 PM
+-- Generation Time: Jul 20, 2023 at 05:48 PM
 -- Server version: 8.0.33-0ubuntu0.20.04.2
 -- PHP Version: 7.4.3-4ubuntu2.19
 
@@ -73,6 +73,38 @@ CREATE TABLE `admin_profile_details` (
   `updation_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `interns`
+--
+
+CREATE TABLE `interns` (
+  `id` int NOT NULL,
+  `intern_name` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
+  `institute_name` varchar(350) COLLATE utf8mb4_general_ci NOT NULL,
+  `department` varchar(350) COLLATE utf8mb4_general_ci NOT NULL,
+  `internship_duration` varchar(120) COLLATE utf8mb4_general_ci NOT NULL,
+  `training_platform` varchar(350) COLLATE utf8mb4_general_ci NOT NULL,
+  `starting_date` varchar(120) COLLATE utf8mb4_general_ci NOT NULL,
+  `ending_date` varchar(120) COLLATE utf8mb4_general_ci NOT NULL,
+  `interns_dob` varchar(120) COLLATE utf8mb4_general_ci NOT NULL,
+  `interns_id` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
+  `interns_password` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
+  `intern_email` varchar(350) COLLATE utf8mb4_general_ci NOT NULL,
+  `intern_contact` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
+  `college_year` varchar(120) COLLATE utf8mb4_general_ci NOT NULL,
+  `sme_name` varchar(120) COLLATE utf8mb4_general_ci NOT NULL,
+  `onboarding_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `interns`
+--
+
+INSERT INTO `interns` (`id`, `intern_name`, `institute_name`, `department`, `internship_duration`, `training_platform`, `starting_date`, `ending_date`, `interns_dob`, `interns_id`, `interns_password`, `intern_email`, `intern_contact`, `college_year`, `sme_name`, `onboarding_date`) VALUES
+(1, 'Riya Gyan Francis', 'St. Xavier\'s College of Management & Technology', 'B.Com (Professional)', '28 Days', 'GRC (Fintech)', '2023-07-03', '2023-07-31', '2004-03-07', 'INT-0723-O3VRL0', 'XUJZmc', 'riyagyan.bth@gmail.com', '6203012799', 'III', 'Vivek Robin Kujur', '2023-07-20 17:44:48');
+
 --
 -- Indexes for dumped tables
 --
@@ -90,6 +122,12 @@ ALTER TABLE `admin_profile_details`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `interns`
+--
+ALTER TABLE `interns`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -104,6 +142,12 @@ ALTER TABLE `administrator`
 --
 ALTER TABLE `admin_profile_details`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `interns`
+--
+ALTER TABLE `interns`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

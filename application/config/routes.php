@@ -56,6 +56,9 @@ $route['translate_uri_dashes'] = FALSE;
 // UI Controllers 
 $route['admin_signup'] = 'UI_Controllers/loadAdminSignup';
 $route['super_admin_login'] = 'UI_Controllers/loadLoginPage';
+$route['interns_onboarding'] = 'UI_Controllers/internsLogin';
+
+$route['verify_interns'] = 'UiAction_Controller/internsLoginAction';
 
 
 // Action Controllers
@@ -70,3 +73,8 @@ $route['admin_dashboard'] = 'UiAction_Controller/adminDashboard';
 $route['admin_profile_view'] = 'UiAction_Controller/loadAdminProfile';
 
 $route['profile_settings'] = 'UiAction_Controller/profileSettingPage';
+
+$route['add_new_interns'] = 'UiAction_Controller/addInterns';
+
+$route['intern_registration'] = 'UiAction_Controller/registerInterns';
+

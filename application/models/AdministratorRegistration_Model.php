@@ -115,6 +115,93 @@ class AdministratorRegistration_Model extends CI_Model
 	}
 
 
+	public function enrollInterns()
+	{
+		if(isset($_POST['internsRegistration']))
+		{
+			$internName = $_POST['internName'];
+			$instituteName = $_POST['instituteName'];
+			$departmentName = $_POST['collegeDepartment'];
+			$internshipTenure  = $_POST['internshipDuration'];
+			$technologyLearned = $_POST['internshipPlatform'];
+			$startDate = $_POST['startingDate'];
+			$endingDate = $_POST['endingDate'];
+			$internsBirthday = $_POST['dateOfBirth'];
+
+			$internLoginId = $_POST['loginID'];
+
+			$internsPassword = $_POST['loginPassword'];
+
+			$internEmail = $_POST['internsEmail'];
+
+			$internsContact = $_POST['internsContact'];
+
+			$collegeYear = $_POST['collegeYear'];
+
+			$mentorName = $_POST['smeName'];
+
+			$checkInternsEmail = $this->db->query("SELECT intern_email FROM interns WHERE intern_email='$internEmail'");
+
+			$checkInternsContact = $this->db->query("SELECT intern_contact FROM interns WHERE intern_contact='$internsContact'");
+
+			if($checkInternsEmail->num_rows()>0)
+			{
+				echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+
+				echo '<script type="text/javascript">';
+				echo 'setTimeout(function () { swal("Duplicate Email Found","Intern Email Already Found.","error");';
+				echo '}, 100);</script>';
+
+				$this->load->view('onboarding/administrator/add_interns');
+			}
+			else if($checkInternsContact->num_rows()>0)
+			{
+				echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+
+				echo '<script type="text/javascript">';
+				echo 'setTimeout(function () { swal("Duplicate Contact Found","Intern Contacts Already Found.","error");';
+				echo '}, 100);</script>';
+
+				$this->load->view('onboarding/administrator/add_interns');
+			}
+
+			else
+			{
+				
+				$internsDetails = array(
+
+				'intern_name' => $internName,
+				'institute_name' => $instituteName,
+				'department' => $departmentName,
+				'internship_duration' => $internshipTenure,
+				'training_platform' => $technologyLearned,
+				'starting_date' => $startDate,
+				'ending_date' => $endingDate,
+				'interns_dob' => $internsBirthday,
+				'interns_id' => $internLoginId,
+				'interns_password' => $internsPassword,
+				'intern_email' => $internEmail,
+				'intern_contact' => $internsContact,
+				'college_year' => $collegeYear,
+				'sme_name' => $mentorName);
+
+				$this->db->insert('interns',$internsDetails);
+
+				echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+
+				echo '<script type="text/javascript">';
+				echo 'setTimeout(function () { swal("Registration Successful","Intern successfully registered with AIDCOM iT Solutions with Login ID: '.$internLoginId.' and Password: '.$internsPassword.' ","success");';
+				echo '}, 100);</script>';
+
+				$this->load->view('onboarding/administrator/add_interns');
+
+			}
+	
+		}
+	}
+
+	
+
 }
 
 ?>
