@@ -36,21 +36,21 @@
 <li class="menu-title" data-key="t-dashboards">Dashboards</li>
 
 <li>
-<a href="index.html">
+<a href="<?php echo base_url('admin_dashboard'); ?>">
 <i class="icon nav-icon" data-feather="monitor"></i>
-<span class="menu-item" data-key="t-sales">Sales</span>
-<span class="badge rounded-pill badge-secondary-subtle">5+</span>
+<span class="menu-item" data-key="t-sales">View Dashboard</span>
+<!-- <span class="badge rounded-pill badge-secondary-subtle">5+</span> -->
 </a>
 </li>
 
 <li>
-<a href="dashboards-analytics.html">
+<a href="<?php echo base_url('profile_settings'); ?>">
 <i class="icon nav-icon" data-feather="pie-chart"></i>
-<span class="menu-item" data-key="t-analytics">Analytics</span>
+<span class="menu-item" data-key="t-analytics">Profile Settings</span>
 </a>
 </li>
 
-<li class="menu-title" data-key="t-applications">Applications</li>
+<li class="menu-title" data-key="t-applications">Interns Management</li>
 
 <li>
 <a href="apps-calendar.html">
