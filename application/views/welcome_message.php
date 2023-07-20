@@ -5,6 +5,33 @@ $this->load->view('master_content/ui_navbar');
 
 ?>
 
+<style type="text/css">
+	input[type=text]
+	{
+	  border-radius: 12px 12px 12px 12px !important;
+	  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21) !important;
+	  border-color: var(--color-set-four-1) !important;
+	  background-color: var(--color-white) !important;
+	  height: 62px !important;
+	  border-width: 0px 0px 0px 3px !important;
+	}
+
+	input[type=submit]
+	{
+	  position: absolute;
+	  z-index: 999;
+	  top: -9px;
+	  right: 5px;
+	  left: unset;
+	  width: 120px;
+	  min-width: 120px;
+	  border-radius: 12px 12px 12px 12px;
+	  border-color: transparent;
+	  background-color: transparent;
+	  background-image: linear-gradient(81deg, var(--color-set-four-1) 0%, var(--color-set-four-2) 74%);
+	}
+</style>
+
 
 <!----==============content_all_warpper==============--->
 <div id="wrapper_full" class="content_all_warpper">
@@ -28,13 +55,17 @@ $this->load->view('master_content/ui_navbar');
 We strive for authenticity and hence have launched this tracker to check Enrolled Interns' Genuinity. Our Interns are provided with specific ID to confirm their originality. Track our Interns by providing their ID in the box below.
 </p>
 </div>
+
 <div class="newsteller_simple">
 <div class="input_group">
-<form method="post">
-<input type="email" name="EMAIL" placeholder="Enter Interns ID"
-required="">
-<input type="submit" value="Verify">
+
+<form method="post" action="<?php echo base_url('interns_authenticity_check'); ?>">
+
+<input type="text" name="internIDdata">
+<input type="submit" value="Verify" name="verifyInterns">
+
 </form>
+
 </div>
 </div>
 <div class="review_box d-flex align-items-center">
@@ -46,9 +77,14 @@ alt="img" />
 <div class="title_whole">
 <h2 class="title"> Internships Completed</h2>
 </div>
-<p>4.8 of 5 <small><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-class="fa fa-star"></i></small></p>
+
+<?php 
+
+$getInternsCount = $this->db->query("SELECT * FROM interns");
+
+?>
+<p><small>Total <code> <?php echo $getInternsCount->num_rows(); ?></code> Intern(s) Enrolled for GRC</small></p>
+
 </div>
 </div>
 </div>

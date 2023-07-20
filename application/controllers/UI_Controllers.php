@@ -28,6 +28,10 @@ class UI_Controllers extends CI_Controller
 		$this->load->view('dashboard/interns/interns_login');
 	}
 
+	public function verifyInternsProfile()
+	{
+		$this->load->view('uiPages/publicVerification');
+	}
 	
 }
 
