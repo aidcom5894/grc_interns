@@ -1,13 +1,30 @@
+<?php
+
+$this->load->view('master_content/interns_dashboard/interns_dash_header');
+$this->load->view('master_content/interns_dashboard/interns_dash_navbar');
+$this->load->view('master_content/interns_dashboard/interns_dash_sidebar');
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php 
 
-$fetchInternDetails = $this->db->query("SELECT * FROM interns WHERE interns_id='{$_SESSION['internName']}'");
-
-$row = $fetchInternDetails->row();
-
-if(isset($row))
-{
-	echo $row->intern_name;
-}
-
+$this->load->view('master_content/interns_dashboard/interns_dash_footer');
 
 ?>

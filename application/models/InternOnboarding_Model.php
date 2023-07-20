@@ -36,7 +36,9 @@ class InternOnboarding_Model extends CI_Model
 				$this->load->view('dashboard/interns/internsDashboard');
 			}
 
+
 			else
+				
 			{
 				echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
 

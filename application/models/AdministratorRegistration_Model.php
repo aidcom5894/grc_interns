@@ -182,6 +182,7 @@ class AdministratorRegistration_Model extends CI_Model
 				'interns_password' => $internsPassword,
 				'intern_email' => $internEmail,
 				'intern_contact' => $internsContact,
+				'intern_avatar' => "",
 				'college_year' => $collegeYear,
 				'sme_name' => $mentorName);
 
@@ -198,6 +199,38 @@ class AdministratorRegistration_Model extends CI_Model
 			}
 	
 		}
+	}
+
+
+	public function verifyInternPublically()
+	{
+		if(isset($_POST['verifyInterns']))
+		{
+			$fetchInput = $_POST['internIDdata'];
+
+			$checkInternAuthenticity = $this->db->query("SELECT * FROM interns WHERE interns_id='$fetchInput'");
+
+			if($checkInternAuthenticity->num_rows()>0)
+			{
+				$_SESSION['singleIntern'] = $fetchInput;
+
+				$this->load->view('uiPages/publicVerification');
+
+				session_destroy();
+				
+				unset($_SESSION['singleIntern']);
+			}
+			else
+			{
+				echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+
+				echo '<script type="text/javascript">';
+				echo 'setTimeout(function () { swal("No Intern Found!","The Intern\'s ID entered by you does not exist. Either this intern was not enrolled with us or the Details Entered By You needs Attention. Please provide Correct ID to fetch Interns\'s Details ","error");';
+				echo '}, 100);</script>';
+				$this->load->view('welcome_message');
+			}
+		}
+
 	}
 
 	
