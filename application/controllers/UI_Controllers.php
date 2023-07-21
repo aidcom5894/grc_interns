@@ -25,7 +25,7 @@ class UI_Controllers extends CI_Controller
 
 	public function internsLogin()
 	{
-		$this->load->view('dashboard/interns/interns_login');
+		$this->load->view('interns/interns_onboarding');
 	}
 
 	public function verifyInternsProfile()

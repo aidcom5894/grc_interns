@@ -85,3 +85,7 @@ $route['intern_registration'] = 'UiAction_Controller/registerInterns';
 
 // Interns Access Route
 $route['interns_dashboard'] = 'UiAction_Controller/loadInternsDashboard';
+
+$route['intern_logout'] = 'UiAction_Controller/endInternSession';
+
+
