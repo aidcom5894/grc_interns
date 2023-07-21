@@ -9,6 +9,7 @@ if(!isset($_SESSION['adminName']))
 }
 
 ?>
+
 <!doctype html>
 <html lang="en">
 

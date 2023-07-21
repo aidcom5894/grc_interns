@@ -1,5 +1,4 @@
-<!-- Begin page -->
-<div id="layout-wrapper">
+
 
 
 <header id="page-topbar">
@@ -357,20 +356,20 @@ class="me-3 rounded-circle avatar-sm" alt="user-pic">
 
 <?php 
 
-$getInternDetails = $this->db->query("SELECT * FROM interns WHERE interns_id='{$_SESSION['internName']}'");
+$getIntern = $this->db->query("SELECT * FROM interns WHERE interns_id='{$_SESSION['internName']}'");
 
-$row = $getInternDetails->row();
+$row = $getIntern->row();
 
-if(isset($row))
-{	?>
+if(isset($row)) { ?>
 
 <div class="dropdown d-inline-block">
 <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown"
 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<img class="rounded-circle header-profile-user" src="<?php echo $row->intern_avatar;?>" alt="Header Avatar">
+<img class="rounded-circle header-profile-user" src="<?php echo base_url(); ?>modules/dashboard/assets/images/users/avatar-1.jpg"
+alt="Header Avatar">
 <span class="ms-2 d-none d-sm-block user-item-desc">
-<span class="user-name"><?php echo $row->intern_name; ?></span>
-<span class="user-sub-title"><?php echo $row->interns_id; ?></span>
+<span class="user-name"></span>
+<span class="user-sub-title">Administrator</span>
 </span>
 </button>
 <div class="dropdown-menu dropdown-menu-end pt-0">
@@ -378,6 +377,7 @@ data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <h6 class="mb-0 text-white">Kate Dudley</h6>
 <p class="mb-0 font-size-11 text-white-50 fw-semibold">kate.dudley@email.com</p>
 </div>
+<?php } ?>
 <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
 <a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
 <a class="dropdown-item" href="apps-kanban-board.html"><i class="mdi mdi-calendar-check-outline text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Taskboard</span></a>
@@ -392,5 +392,3 @@ data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 </div>
 </div>
 </header>
-
-<?php } ?>

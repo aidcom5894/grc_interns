@@ -166,13 +166,13 @@ id="layout-direction-rtl" value="rtl">
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/feather-icons/feather.min.js"></script>
 
 <!-- apexcharts -->
-<!-- <script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/apexcharts/apexcharts.min.js"></script> -->
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/apexcharts/apexcharts.min.js"></script>
 
 <!-- Vector map-->
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/jsvectormap/maps/world-merc.js"></script>
 
-<!-- <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/dashboard-sales.init.js"></script> -->
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/dashboard-sales.init.js"></script>
 
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/app.js"></script>
 
