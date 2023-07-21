@@ -1,3 +1,4 @@
+
 <?php 
 
 defined('BASEPATH') OR exit('no direct script access allowed');
@@ -33,7 +34,7 @@ class InternOnboarding_Model extends CI_Model
 				echo 'setTimeout(function () { swal("Intern Authorised","Interns authorised successfully. You can now access your Dashboard.","success");';
 				echo '}, 100);</script>';
 
-				$this->load->view('dashboard/interns/internsDashboard');
+				redirect(base_url('interns_dashboard'));
 			}
 
 
@@ -50,6 +51,39 @@ class InternOnboarding_Model extends CI_Model
 			}
 		}
 	}
+
+
+	public function internsLogout()
+	{
+		echo "<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>";
+
+		echo '<script type="text/javascript">';
+		echo 'setTimeout(function () { swal("Intern Logged Out","Intern Successfully Logged Out.","success");';
+		echo '}, 100);</script>';
+
+		session_destroy();
+		unset($_SESSION['internName']);
+		
+		$this->load->view('interns/interns_onboarding');
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 ?>

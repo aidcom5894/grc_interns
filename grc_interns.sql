@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 20, 2023 at 05:48 PM
+-- Generation Time: Jul 21, 2023 at 09:03 AM
 -- Server version: 8.0.33-0ubuntu0.20.04.2
 -- PHP Version: 7.4.3-4ubuntu2.19
 
@@ -93,6 +93,7 @@ CREATE TABLE `interns` (
   `interns_password` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
   `intern_email` varchar(350) COLLATE utf8mb4_general_ci NOT NULL,
   `intern_contact` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
+  `intern_avatar` varchar(350) COLLATE utf8mb4_general_ci NOT NULL,
   `college_year` varchar(120) COLLATE utf8mb4_general_ci NOT NULL,
   `sme_name` varchar(120) COLLATE utf8mb4_general_ci NOT NULL,
   `onboarding_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -102,8 +103,9 @@ CREATE TABLE `interns` (
 -- Dumping data for table `interns`
 --
 
-INSERT INTO `interns` (`id`, `intern_name`, `institute_name`, `department`, `internship_duration`, `training_platform`, `starting_date`, `ending_date`, `interns_dob`, `interns_id`, `interns_password`, `intern_email`, `intern_contact`, `college_year`, `sme_name`, `onboarding_date`) VALUES
-(1, 'Riya Gyan Francis', 'St. Xavier\'s College of Management & Technology', 'B.Com (Professional)', '28 Days', 'GRC (Fintech)', '2023-07-03', '2023-07-31', '2004-03-07', 'INT-0723-O3VRL0', 'XUJZmc', 'riyagyan.bth@gmail.com', '6203012799', 'III', 'Vivek Robin Kujur', '2023-07-20 17:44:48');
+INSERT INTO `interns` (`id`, `intern_name`, `institute_name`, `department`, `internship_duration`, `training_platform`, `starting_date`, `ending_date`, `interns_dob`, `interns_id`, `interns_password`, `intern_email`, `intern_contact`, `intern_avatar`, `college_year`, `sme_name`, `onboarding_date`) VALUES
+(1, 'Riya Gyan Francis', 'St. Xavier\'s College of Management & Technology', 'B.Com (Professional)', '28 Days', 'GRC (Fintech)', '2023-07-03', '2023-07-31', '2004-03-07', 'INT-0723-O3VRL0', 'XUJZmc', 'riyagyan.bth@gmail.com', '6203012799', '', 'III', 'Vivek Robin Kujur', '2023-07-20 17:44:48'),
+(2, 'Demo Intern', 'AIDCOM', 'IT', '1 month', 'Full Stack Development', '2023-07-21', '2023-08-24', '2023-07-05', 'INT-0723-MNPW9E', 'XzNAUe', 'test@gmail.com', '9876543210', '', 'IV', 'Vivek Robin Kujur', '2023-07-21 07:47:09');
 
 --
 -- Indexes for dumped tables
@@ -147,7 +149,7 @@ ALTER TABLE `admin_profile_details`
 -- AUTO_INCREMENT for table `interns`
 --
 ALTER TABLE `interns`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

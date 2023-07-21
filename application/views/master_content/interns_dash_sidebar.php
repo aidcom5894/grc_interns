@@ -1,4 +1,3 @@
-<!-- ========== Left Sidebar Start ========== -->
 <div class="vertical-menu">
 
 <!-- LOGO -->
@@ -425,3 +424,4 @@
 </div>
 </div>
 <!-- Left Sidebar End -->
+

@@ -5,7 +5,7 @@
 <head>
 
 <meta charset="utf-8" />
-<title>Aidcom Interns | Login</title>
+<title>Interns | Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
 <meta content="Pichforest" name="author" />
@@ -40,8 +40,8 @@
 </a>
 </div>
 <div class="mb-4">
-<h5 class="">Enrolled Interns Login</h5>
-<p>Secure Portal to Access your Dashboard</p>
+<h5 class="">Interns Login Portal</h5>
+<p>Interns Secure Portal to access Dashboard</p>
 </div>
 
 

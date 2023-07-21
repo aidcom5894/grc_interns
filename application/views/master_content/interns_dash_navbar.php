@@ -355,14 +355,22 @@ class="me-3 rounded-circle avatar-sm" alt="user-pic">
 </button>
 </div>
 
+<?php 
+
+$getInternDetails = $this->db->query("SELECT * FROM interns WHERE interns_id='{$_SESSION['internName']}'");
+
+$row = $getInternDetails->row();
+
+if(isset($row))
+{	?>
+
 <div class="dropdown d-inline-block">
 <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown"
 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<img class="rounded-circle header-profile-user" src="<?php echo base_url(); ?>modules/dashboard/assets/images/users/avatar-1.jpg"
-alt="Header Avatar">
+<img class="rounded-circle header-profile-user" src="<?php echo $row->intern_avatar;?>" alt="Header Avatar">
 <span class="ms-2 d-none d-sm-block user-item-desc">
-<span class="user-name">Kate Dudley</span>
-<span class="user-sub-title">Administrator</span>
+<span class="user-name"><?php echo $row->intern_name; ?></span>
+<span class="user-sub-title"><?php echo $row->interns_id; ?></span>
 </span>
 </button>
 <div class="dropdown-menu dropdown-menu-end pt-0">
@@ -384,3 +392,5 @@ alt="Header Avatar">
 </div>
 </div>
 </header>
+
+<?php } ?>

@@ -1,4 +1,15 @@
+<?php 
 
+if(!isset($_SESSION['internName']))
+{
+	session_destroy();
+	
+	unset($_SESSION['internName']);
+
+	redirect(base_url('interns_onboarding'));
+}
+
+?>
 
 <!doctype html>
 <html lang="en">
