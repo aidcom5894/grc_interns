@@ -47,7 +47,7 @@ class InternOnboarding_Model extends CI_Model
 				echo 'setTimeout(function () { swal("Authorisation Failed!","No Interns Registered with the provided Credentials. Please provide Correct Credentials.","error");';
 				echo '}, 100);</script>';
 
-				$this->load->view('dashboard/interns/interns_login');
+				$this->load->view('interns/interns_onboarding');
 			}
 		}
 	}
