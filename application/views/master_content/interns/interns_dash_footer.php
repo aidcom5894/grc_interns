@@ -3,11 +3,11 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-sm-6">
-<script>document.write(new Date().getFullYear())</script> &copy; Dashonic.
+<?php echo date('Y'); ?> &copy; Interns Portal.
 </div>
 <div class="col-sm-6">
 <div class="text-sm-end d-none d-sm-block">
-Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://Pichforest.com/" target="_blank" class="text-reset">Pichforest</a>
+Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="#" target="_blank" class="text-reset">AIDCOM</a>
 </div>
 </div>
 </div>
@@ -175,6 +175,10 @@ id="layout-direction-rtl" value="rtl">
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/dashboard-sales.init.js"></script>
 
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/app.js"></script>
+
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/profile.init.js"></script>
+
+  <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/swiper-bundle.min.js"></script>
 
 </body>
 

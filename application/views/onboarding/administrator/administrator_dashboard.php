@@ -1,8 +1,8 @@
 <?php 
 
 $this->load->view('master_content/admin_dash_header');
-$this->load->view('master_content/admin_dash_sidebar');
 $this->load->view('master_content/admin_dash_navbar');
+$this->load->view('master_content/admin_dash_sidebar');
 
 
 ?>

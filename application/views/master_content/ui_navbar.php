@@ -137,10 +137,6 @@ About
 </li>
 
 <li class="menu-item nav-item">
-<a href="#" class="nav_link"><span class="text-link">SMEs & Mentors</span></a>
-</li>
-
-<li class="menu-item nav-item">
 <a href="<?php echo base_url('interns_onboarding'); ?>" class="nav_link"><span class="text-link">Enrolled Interns</span></a>
 </li>
 
