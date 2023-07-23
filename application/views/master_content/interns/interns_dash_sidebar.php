@@ -45,7 +45,14 @@
 <li>
 <a href="<?php echo base_url('interns_profile'); ?>">
 <i class="icon nav-icon" data-feather="trello"></i>
-<span class="menu-item" data-key="t-dashboard">My Profile</span>
+<span class="menu-item" data-key="t-profile">My Profile</span>
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="icon nav-icon" data-feather="terminal"></i>
+<span class="menu-item" data-key="t-manage-profile">Manage Profile</span>
 </a>
 </li>
 
