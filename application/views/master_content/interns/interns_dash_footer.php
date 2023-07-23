@@ -172,13 +172,13 @@ id="layout-direction-rtl" value="rtl">
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/libs/jsvectormap/maps/world-merc.js"></script>
 
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/swiper-bundle.min.js"></script>
+
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/dashboard-sales.init.js"></script>
 
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/app.js"></script>
 
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/profile.init.js"></script>
-
-  <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/swiper-bundle.min.js"></script>
 
 </body>
 
