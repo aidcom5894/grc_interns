@@ -140,6 +140,10 @@ class AdministratorRegistration_Model extends CI_Model
 
 			$mentorName = $_POST['smeName'];
 
+			$profileRange = array("avatar1.png","avatar2.png","avatar3.png","avatar4.png","avatar5.png","avatar6.png","avatar7.png","avatar8.png","avatar9.png","avatar10.png","avatar11.png");
+
+			$internAvatar = base_url()."modules/profile/".$profileRange[array_rand($profileRange,1)];
+
 			$checkInternsEmail = $this->db->query("SELECT intern_email FROM interns WHERE intern_email='$internEmail'");
 
 			$checkInternsContact = $this->db->query("SELECT intern_contact FROM interns WHERE intern_contact='$internsContact'");
@@ -182,7 +186,7 @@ class AdministratorRegistration_Model extends CI_Model
 				'interns_password' => $internsPassword,
 				'intern_email' => $internEmail,
 				'intern_contact' => $internsContact,
-				'intern_avatar' => "",
+				'intern_avatar' => $internAvatar,
 				'college_year' => $collegeYear,
 				'sme_name' => $mentorName);
 

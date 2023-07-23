@@ -5,22 +5,26 @@ $this->load->view('master_content/interns/interns_dash_navbar');
 $this->load->view('master_content/interns/interns_dash_sidebar');
 
 ?>
+
+
 <!-- ============================================================== -->
 <!-- Start right Content here -->
 <!-- ============================================================== -->
 <div class="main-content">
 <div class="page-content">
 <div class="container-fluid">
+
+	
 <!-- start page title -->
 <div class="row">
 <div class="col-12">
 <div class="page-title-box d-flex align-items-center justify-content-between">
-<h4 class="mb-0">Sales Analytics</h4>
+<h4 class="mb-0">Intern Dashboard</h4>
 
 <div class="page-title-right">
 <ol class="breadcrumb m-0">
-<li class="breadcrumb-item"><a href="javascript: void(0);">Dashonic</a></li>
-<li class="breadcrumb-item active">Sales Analytics</li>
+<li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
+<li class="breadcrumb-item active">Dashboard</li>
 </ol>
 </div>
 
@@ -156,26 +160,31 @@ class="mdi mdi-chevron-down ms-1"></i></span>
 </div>
 </div> <!-- end row-->
 
+<?php 
+
+$internName = $this->db->query("SELECT * FROM interns WHERE interns_id = '{$_SESSION['internName']}'");
+
+$row = $internName->row();
+
+if(isset($row)) { ?>
+
 <div class="row">
 <div class="col-xl-4">
 <div class="card">
 <div class="card-body">
-<div class="alert alert-warning border-0 d-flex align-items-center" role="alert">
-<i class="uil uil-exclamation-triangle font-size-16 text-warning me-2"></i>
+<div class="alert alert-success border-0 d-flex align-items-center" role="alert">
+<i class="uil uil-award font-size-16 text-success me-2"></i>
 <div class="flex-grow-1 text-truncate">
-Your free trial expired in <b>21</b> days. 
-</div>
-<div class="flex-shrink-0">
-<a href="pricing-basic.html" class="text-reset text-decoration-underline"><b>Upgrade</b></a>
+Authorised Logged in Intern <b><?php echo $row->intern_name; ?></b> 
 </div>
 </div>
 
+<?php } ?>
 <div class="row align-items-center">
 <div class="col-sm-7">
-<p class="font-size-18">Upgrade your plan from a <span class="fw-semibold">Free
-trial</span>, to ‘Premium Plan’ <i class="mdi mdi-arrow-right"></i></p>
+<p class="font-size-18">Interns enrolled with  <span class="fw-semibold">AIDCOM</span>, did well during Internship. <i class="mdi mdi-arrow-right"></i></p>
 <div class="mt-4">
-<a href="pricing-basic.html" class="btn btn-primary">Upgrade Account!</a>
+<a href="pricing-basic.html" class="btn btn-primary">Check Intern Credit</a>
 </div>
 </div>
 <div class="col-sm-5">

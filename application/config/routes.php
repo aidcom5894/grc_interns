@@ -88,4 +88,6 @@ $route['interns_dashboard'] = 'UiAction_Controller/loadInternsDashboard';
 
 $route['intern_logout'] = 'UiAction_Controller/endInternSession';
 
+$route['interns_profile'] = 'Interns_DashboardController/showinternsProfile';
+
 

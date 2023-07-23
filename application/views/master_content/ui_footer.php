@@ -17,7 +17,7 @@ Tracking your Claims
 </div>
 <div class="theme_btn_all">
 <a href="#" class="theme_btn">
-Track Your Claim <span> <i class=" fi-rr-arrow-small-up"></i></span>
+Apply Now <span> <i class=" fi-rr-arrow-small-up"></i></span>
 </a>
 </div>
 <div class="d-flex align-items-center contact_header_one">
@@ -51,42 +51,42 @@ Home </a>
 <div class="d-flex align-items-center">
 <div class="icon trans"></div>
 <a class="links color_white" href="#">
-About </a>
+Terms of Use </a>
 </div>
 </li>
 <li>
 <div class="d-flex align-items-center">
 <div class="icon trans"></div>
 <a class="links color_white" href="#">
-Services </a>
+Privacy Policy </a>
 </div>
 </li>
 <li>
 <div class="d-flex align-items-center">
 <div class="icon trans"></div>
 <a class="links color_white" href="#">
-Reviews </a>
+Cookie Policy </a>
 </div>
 </li>
 <li>
 <div class="d-flex align-items-center">
 <div class="icon trans"></div>
 <a class="links color_white" href="#">
-Need a Career? </a>
+News & Blogs</a>
 </div>
 </li>
 <li>
 <div class="d-flex align-items-center">
 <div class="icon trans"></div>
 <a class="links color_white" href="#">
-News & Blog </a>
+Careers</a>
 </div>
 </li>
 <li>
 <div class="d-flex align-items-center">
 <div class="icon trans"></div>
 <a class="links color_white" href="#">
-Support </a>
+Contact Us </a>
 </div>
 </li>
 </ul>
@@ -109,7 +109,7 @@ Support </a>
 </div>
 <div class="col-lg-7 text-md-end">
 <div class="position-relative color_white">
-Copyright 2023, Vankine. All Rights Reserved</div>
+Copyright <?php echo date('Y'); ?> Crafted with ❤️ By <span><a href="#">AIDCOM</a></span></div>
 </div>
 </div>
 
