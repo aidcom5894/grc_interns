@@ -42,10 +42,10 @@ $row = $internsAllDetails->row();
 
 if(isset($row)) { ?>
 <div class="avatar-xl mx-auto mb-4">    
-<img src="assets/images/users/avatar-1.jpg" alt="" class="rounded-circle img-thumbnail">
+<img src="<?php echo $row->intern_avatar; ?>" alt="" class="rounded-circle img-thumbnail">
 </div>
-<h5 class="mb-1">Katie Sharpe</h5>
-<p class="text-muted">Full Stack Developer</p>
+<h5 class="mb-1"><?php echo $row->intern_name; ?></h5>
+<p class="text-muted"><?php echo $row->department; ?></p>
 
 <div><i class="mdi mdi-wallet text-muted font-size-16 align-middle me-1"></i> <span class="align-middle">Internship Credit : <b class="fw-semibold font-size-16">Good</b></span></div>
 </div>
@@ -123,6 +123,7 @@ if(isset($row)) { ?>
 <div>
 <ul class="list-unstyled mb-0 text-muted">
 <li>
+<h5 class="card-title mb-3">Social Media</h5>
 <div class="d-flex align-items-center py-2">
 <div class="flex-grow-1">
 <i class="mdi mdi-github font-size-16 text-dark me-1"></i> Github
@@ -177,7 +178,7 @@ if(isset($row)) { ?>
 <div class="col-lg-8">
 <div class="card">
 <div class="card-body">
-<h5 class="card-title mb-4">About</h5>
+<h5 class="card-title mb-4">Interns Profile</h5>
 
 <p>Hi I'm Katie, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
 <p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at it has a more-or-less normal distribution of letters</p>
@@ -400,7 +401,7 @@ if(isset($row)) { ?>
 <h5 class="card-title mb-4">Skills</h5>
 
 <div class="d-flex flex-wrap gap-2 font-size-16">
-<a href="#" class="badge badge-primary-subtle">Photoshop</a>
+<a href="#" class="badge badge-primary-subtle">Photoshop Illusrtator HTML</a>
 <a href="#" class="badge badge-primary-subtle">illustrator</a>
 <a href="#" class="badge badge-primary-subtle">HTML</a>
 <a href="#" class="badge badge-primary-subtle">CSS</a>
