@@ -176,9 +176,9 @@ id="layout-direction-rtl" value="rtl">
 
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/dashboard-sales.init.js"></script>
 
-<script src="<?php echo base_url(); ?>modules/dashboard/assets/js/app.js"></script>
-
 <script src="<?php echo base_url(); ?>modules/dashboard/assets/js/pages/profile.init.js"></script>
+
+<script src="<?php echo base_url(); ?>modules/dashboard/assets/js/app.js"></script>
 
 </body>
 
